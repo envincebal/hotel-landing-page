@@ -11,21 +11,24 @@
   <title>Hotel Page</title>
 </head>
 
-<body>
+<body id="home">
   <header class="header-section">
-    <nav>
+    <nav id="navbar">
       <div class="container">
         <h1><i class="bi bi-house-fill"></i><span class="text-primary"> H2</span>O</h1>
 
         <ul class="nav-links-list">
           <li>
-            <a href="">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a class="nav-link" href="#history">History</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -35,19 +38,21 @@
       <h2>Welcome to </h2>
       <h1><span class="text-primary">Hotel Heaven</span> Online</h1>
       <p>Enjoy your stay with us!</p>
-      <button class="btn btn-dark">Read More</button>
+      <a href="#about" class="btn btn-dark">Read More</a>
     </div>
-
   </header>
-
-  <section class="info-section">
+  <section id="history" class="info-section">
     <div class="info-img"></div>
     <div class=" info bg-dark">
       <h1>History of <span class="text-primary">H2</span>O</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda aliquam dolor alias iste autem, quaerat
         magni unde accusantium qui fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis, explicabo quisquam
         dolor placeat praesentium nesciunt mollitia quos nobis natus voluptatum asperiores!</p>
-      <button class="btn btn-light">Learn More</button>
+      <p>Facere, ipsa maxime, ullam id amet odio laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores
+        nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, eligendi laboriosam. Repellendus officia
+        harum
+        eaque.</p>
+      <p>Doloribus, voluptas dolore! Cupiditate aliquid sequi deserunt.</p>
     </div>
   </section>
   <section class="features">
@@ -70,7 +75,7 @@
         eaque.</p>
     </div>
   </section>
-  <section class="about-section bg-dark">
+  <section id="about" id="about-2" class="about-section bg-dark">
     <div class="about-details container">
       <div class="about-left">
         <h1>About <span class="text-primary">H2</span>O</h1>
@@ -113,7 +118,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-form bg-light">
+  <section id="contact" class="contact-form bg-light">
     <div class="container">
       <h1><span class="text-primary">Contact</span> Us</h1>
       <p>Questions? Feedback? Send us a message!</p>
@@ -155,8 +160,12 @@
     </div>
   </section>
   <footer>
-    <p>Hotel Heaven Online © 2021, All RIghts Reserved</p>
+    <p>Hotel Heaven Online © 2021</p>
+    <p>All Rights Reserved</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -9,7 +9,6 @@ html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
-
 }
 
 a {
@@ -62,20 +61,14 @@ section {
   padding: 1rem 1.5rem;
   border: none;
   font-size: 1.1rem;
-}
-
-.btn-light {
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.btn-dark {
   background-color: #333;
   color: #f4f4f4;
+  cursor: pointer;
 }
 
-.btn {
-  cursor: pointer;
+.btn:hover {
+  background-color: #f7c08a;
+  color: #f4f4f4;
 }
 
 
@@ -89,6 +82,7 @@ nav {
   z-index: 1;
   color: #fff;
   padding: 1rem;
+
 }
 
 nav h1 {
@@ -101,7 +95,6 @@ nav .container {
   align-items: center;
 }
 
-
 .nav-links-list {
   list-style-type: none;
   display: flex;
@@ -109,11 +102,12 @@ nav .container {
 }
 
 .nav-links-list li a {
-  padding: 1.3rem;
+  padding: 1.2rem;
   color: #fff;
 }
 
-.nav-links-list li a:hover {
+.nav-links-list li a:hover,
+.nav-links-list li a.current {
   background-color: #5f5f5f;
   color: #f7c08a;
 }
@@ -140,7 +134,7 @@ nav .container {
 }
 
 .title-container h1 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   line-height: 1.3em;
 }
 
@@ -177,7 +171,7 @@ nav .container {
 }
 
 .info p {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 /* Features */
@@ -232,10 +226,10 @@ nav .container {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 
 .testimonial-title {
+  line-height: 1.3em;
   text-align: center;
   color: #fff;
   font-size: 2.5rem;

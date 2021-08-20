@@ -13,12 +13,70 @@
   }
 
   .nav-links-list {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links-list li {
+    padding: 5px 0;
   }
 
   .nav-links-list li a {
     padding: 5px 0;
+
+  }
+
+  .header-section {
+    height: 600px;
+  }
+}
+
+@media(max-width: 768px) {
+  .features {
     display: block;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .testimony-div {
+    display: block;
+  }
+
+  .testimony {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-div {
+    display: block;
+  }
+}
+
+@media(max-width: 1080px) {
+  .info-section {
+    height: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+
+  .info-img {
+    width: 0%;
+  }
+
+  .about-details {
+    display: block;
+  }
+
+  .about-left,
+  .about-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .about-right {
+    margin-top: 40px;
   }
 }
