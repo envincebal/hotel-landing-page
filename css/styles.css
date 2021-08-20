@@ -9,6 +9,7 @@ html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
+
 }
 
 a {
@@ -26,11 +27,15 @@ p {
   margin: 10px 0;
 }
 
+section {
+  overflow: auto;
+}
+
 /* Utility classes */
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1100px;
   padding: 0 20px;
 }
 
@@ -49,8 +54,8 @@ p {
 }
 
 .bg-primary {
-  color: #f7c08a;
-  background-color: #333;
+  color: #333;
+  background-color: #f7c08a;
 }
 
 .btn {
@@ -69,34 +74,31 @@ p {
   color: #f4f4f4;
 }
 
+.btn {
+  cursor: pointer;
+}
+
+
+/* Navbar */
+
 nav {
   background-color: #333;
   align-items: center;
-  position: sticky;
-}
-
-nav a,
-nav i {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   color: #fff;
+  padding: 1rem;
 }
 
-.btn {
-  cursor: pointer;
+nav h1 {
+  padding: 0;
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo-div {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0 3px;
-  padding: 1.1rem;
 }
 
 
@@ -108,12 +110,15 @@ nav .container {
 
 .nav-links-list li a {
   padding: 1.3rem;
+  color: #fff;
 }
 
 .nav-links-list li a:hover {
   background-color: #5f5f5f;
   color: #f7c08a;
 }
+
+/* Title Section */
 
 .header-section {
   background-image: url("../img/showcase.jpg");
@@ -136,6 +141,7 @@ nav .container {
 
 .title-container h1 {
   font-size: 2.5rem;
+  line-height: 1.3em;
 }
 
 .title-container h2 {
@@ -146,9 +152,11 @@ nav .container {
   margin-bottom: 2rem;
 }
 
+/* Info Section */
+
 .info-section {
   display: flex;
-  height: 400px;
+  height: 450px;
 }
 
 .info-img {
@@ -164,7 +172,142 @@ nav .container {
   text-align: center;
 }
 
+.info h1 {
+  font-size: 2.5rem;
+}
 
 .info p {
   padding-bottom: 40px;
+}
+
+/* Features */
+
+.features {
+  display: flex;
+}
+
+.box {
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i {
+  font-size: 3rem;
+}
+
+/* About Section */
+
+.about-section {
+  padding: 50px 0;
+}
+
+.about-details {
+  display: flex;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-left h1 {
+  font-size: 2.5rem;
+}
+
+.about-right {
+  text-align: center;
+  width: 50%;
+}
+
+.about-right img {
+  width: 70%;
+  border-radius: 100%;
+}
+
+/* About Section */
+
+.testimonials {
+  padding: 50px 0;
+  background-image: url("../img/test-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.testimonial-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0 0 40px 0;
+}
+
+.testimony-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimony {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.testimony img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* Contact Form */
+
+.contact-form {
+  padding: 50px 0;
+}
+
+.contact-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px #ddd solid;
+  padding: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+.form-group textarea {
+  height: 200px;
+}
+
+/* Contact Info */
+
+.contact-div {
+  display: flex;
+}
+
+.box h3 {
+  margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+  padding: 30px;
+  background-color: rgb(73, 73, 73);
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  text-align: center;
 }
