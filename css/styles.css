@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main styling */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility classes */
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  color: #f7c08a;
+  background-color: #333;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.btn-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  align-items: center;
+  position: sticky;
+}
+
+nav a,
+nav i {
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 3px;
+  padding: 1.1rem;
+}
+
+
+.nav-links-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links-list li a {
+  padding: 1.3rem;
+}
+
+.nav-links-list li a:hover {
+  background-color: #5f5f5f;
+  color: #f7c08a;
+}
+
+.header-section {
+  background-image: url("../img/showcase.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+.title-container h1 {
+  font-size: 2.5rem;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+}
+
+.title-container p {
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  display: flex;
+  height: 400px;
+}
+
+.info-img {
+  background-image: url("../img/photo-1.jpg");
+  background-repeat: no-repeat;
+  width: 50%;
+}
+
+.info {
+  width: 50%;
+  overflow: hidden;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+
+.info p {
+  padding-bottom: 40px;
+}
