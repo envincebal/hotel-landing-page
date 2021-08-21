@@ -9,7 +9,7 @@ $(window).on("scroll", function () {
 
 // Smooth Scrolling
 
-$("#navbar a, .btn").on("click", function (event) {
+$("#navbar a, .read-more").on("click", function (event) {
   if (this.hash !== "") {
     event.preventDefault();
 
