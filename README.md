@@ -1,5 +1,3 @@
-# hotel-landing-page
-
 ## Project Overview
 A landing page for a fictional hotel. It focuses heavily on flexbox and responsive design.
 
